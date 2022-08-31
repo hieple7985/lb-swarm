@@ -1,0 +1,2 @@
+@import "wikipedia_styles_light_fr.css";
+@import "wikipedia_styles_dark_fr.css" (prefers-color-scheme: dark);
