@@ -1,0 +1,24 @@
+.select_content {
+    width: 100%;
+    height: 100%;
+}
+
+h1 {
+    text-align: center;
+    justify-content: center;
+}
+
+.searchButton {
+    margin: 0 auto;
+    display: block;
+}
+
+.language{
+    display: inline;
+    padding-left: 20px;
+}
+
+.category{
+    display: inline;
+    padding-left: 20px;
+}
