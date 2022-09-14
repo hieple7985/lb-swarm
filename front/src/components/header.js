@@ -12,14 +12,7 @@ const Header = () => {
                     </div>
                     <ul className="nav navbar-nav">
                         <li><a href="/" >Search</a></li>
-                        <li><a onClick={function(){
-                            fetch("http://localhost:8000/api/zim/search_downloaded")
-                            .then((data) => {
-                                return data.json()
-                            }).then((data) => {
-                                console.log(data)
-                            })
-                        }}>Downloaded</a></li>
+                        <li><a onClick={function(){fetch("http://localhost:8000/extract")}}>Extract</a></li>
                     </ul>
                     <button className="btn btn-danger navbar-btn" id="about">About</button>
                 </div>

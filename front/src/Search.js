@@ -7,18 +7,9 @@ const Search = () => {
     const [searching, setSearching] = useState('');
     const [isSearch, setIsSearch] = useState(false);
     const [buttonSearch, setButtonSearch] = useState(true);
-    const [isIframe, setIsIframe] = useState(true);
-    const [frame, setFrame] = useState('');
-
-
-    useEffect( () => {
-        fetch("https://bah5acgza5m4dh5tae5ghryvrcjw4er3t67aetyi5dv4gvnrapagejfqrqaoq.bzz.link")
-            .then(res => console.log(res))
-            .catch(err => console.log(err));
-    }, []);
-        
-
-
+    const [isIframe, setIsIframe] = useState(true);   
+    
+ 
     const searched = (e) => {
         e.preventDefault();
         setSearching(e.target.value);
@@ -39,7 +30,7 @@ const Search = () => {
         <>
             {buttonSearch && <button onClick={function(){setIsSearch(true); setButtonSearch(false); setIsIframe(false)}} 
             className="btn btn-danger navbar-btn">Search</button>}
-            {isIframe && <iframe id="iframe"  title="index">{frame}</iframe>}
+            {isIframe && <iframe id="iframe"  title="index" src="http://localhost:9454"></iframe>}
             {isSearch && <div className="container-fluid">
                 <span>Total files: {files.length} </span>
                 <div className='language-bar'>
